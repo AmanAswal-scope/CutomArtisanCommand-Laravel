@@ -1,0 +1,796 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  
+  .main-wrapper {
+    width: 100%;
+  }
+  
+  .navbar-bg {
+    background: #000
+  }
+  
+  .navbar-nav a.nav-link {
+    color:#fff;
+  }
+  
+  .navbar-nav a.nav-link:after{
+    transition: all ease-in-out .2s;
+    background: none repeat scroll 0 0 #ffffff;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+  }
+  
+  .navbar-nav a.nav-link:hover, .navbar-nav a.nav-link.active  {
+    color:#348EE1;
+  }
+  
+  .navbar-nav a.nav-link:hover:after {
+    width:100%
+  }
+  
+  .navbar-toggler {
+    color:#fff;
+  }
+  
+  .logo-img {
+    max-width: 216px;
+    height:54px;
+  }
+  
+  .banner {
+    width:100%;
+    background: #000 url(../images/home-banner.png) no-repeat -30% ;
+    max-height: 499px;
+    /* height:499px; */
+    /* background-size: cover; */
+    background-size: contain;
+    background-position: right top;
+  }
+  
+  .banner-services-bg {
+    width:100%;
+    background: #000 url(../images/cyber_security_advisory_banner.png) no-repeat -30% ;
+    max-height: 499px;
+    /* height:499px; */
+    /* background-size: cover; */
+    background-size: contain;
+    background-position: right top;
+  }
+  
+  .banner-services-vciso-bg{
+    width:100%;
+    background: #000 url(../images/vciso_services_banner.png) no-repeat -30% ;
+    max-height: 499px;
+    /* height:499px; */
+    /* background-size: cover; */
+    background-size: contain;
+    background-position: right top;
+  }
+  
+  .banner-it-managed-services-bg {
+    width:100%;
+    background: #000 url(../images/it_managed_services_banner.png) no-repeat -30% ;
+    max-height: 499px;
+    /* height:499px; */
+    /* background-size: cover; */
+    background-size: contain;
+    background-position: right top;
+  }
+  
+  .banner-text-bg {
+    /* background: #000; */
+    height:100%
+  } 
+  
+  .banner-text {
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .banner-text h1 {
+    font-size:2.5rem;
+    padding-bottom: 25px;
+  }
+  
+  .banner-text h6 {
+    line-height: 30px;
+    padding-bottom: 15px;
+  }
+  
+  /* .btn-talk-to-expert i {
+    margin-left: 20px;
+  } */
+  
+  .arrow-animate {
+    animation: slide1 1s ease-in-out infinite;
+  }
+  
+  @keyframes slide1 {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(10px, 0);
+    }
+  }
+  
+  .who-we-what-bx, .tab-bg {
+    background: #4577A5
+  }
+  
+  .who-we-what-bx .card-body{
+    padding:0;
+    background: rgb(239 247 255);
+    background: linear-gradient(0deg, rgb(239 247 255) 0%, rgba(255,255,255,1) 75%);
+  }
+  
+  .who-we-what-bx .card-title {
+    color: #4577A5;
+    font-weight: 800;
+    border-bottom: 1px solid #4577a5;
+  }
+  
+  .who-we-what-bx .card-title.who-we-are {
+    background: #eff7ff url(../images/who_icon.png) no-repeat; 
+  }
+  
+  .who-we-what-bx .card-title.wht-we-do {
+    background: #eff7ff url(../images/what_icon.png) no-repeat; 
+  }
+  
+  .who-we-what-bx .card-title.why-we-do {
+    background: #eff7ff url(../images/why_icon.png) no-repeat; 
+  }
+  
+  .who-we-what-bx .card-title.who-we-are,
+  .who-we-what-bx .card-title.wht-we-do,
+  .who-we-what-bx .card-title.why-we-do {
+    padding:20px;
+    background-position: 15px center;
+    background-size: 10%;
+  }
+  
+  .who-we-what-bx .card-text {
+    line-height: 1.75em;
+    padding: .5rem 1rem 1rem;
+  }
+  
+  
+    .custom-tab-pills .nav-link{
+      position:relative;
+      color:#fff;
+      background:#4577A5;
+      border:10px solid #4577A5;
+      font-weight:500;
+      font-size:1.25rem;
+    }
+    .custom-tab-pills .nav-link.active {
+      color:#000;
+      background:#fff;
+      border:10px solid #4577A5;
+      font-weight:600;
+      font-size:1.25rem;
+    }
+    .custom-tab-pills .nav-link .nav-item-arrow {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #4577A5;
+      left: calc(50% - 10px);
+      z-index: 1;
+      position: absolute;
+      bottom: 0;
+    }
+  
+    .services-tab .custom-tab-pills{
+      border-bottom:1px solid #fff;
+    }
+  
+    .services-tab .custom-tab-pills .nav-link{
+      height:100%;
+  border:0;
+  border-radius:0
+    }
+  
+    .services-tab .custom-tab-pills .nav-link.active .nav-item-arrow {
+      bottom: -1px;
+    }
+  
+    .services-tab .tab-content-service {
+      color:#fff;
+    }
+  
+    .tab-content, .ourservicestabbg {
+      background:#EFF7FF
+    }
+  
+    .tab-content.tab-content-service, .tab-content-service-bg {
+      background:#4577A5
+    }
+  
+    .awardsandcertifications {
+      background:#4577A5;
+    }
+  
+    .award-item-list {
+      list-style:none;
+      /* align-items: center; */
+      justify-content: center;
+      display:flex;
+      flex-wrap: wrap;
+    }
+  
+      .award-item {
+        /* background: url(../images/award_certification_bg.png) no-repeat; */
+        /* width:392px;
+        height:300px;
+        line-height: 240px; */
+        flex: 0 0 calc(33.33% - 10px);
+        margin: 0px;
+        background-color: rgb(148 188 224 / 15%);
+        text-align: center;
+        /* padding-top: 15%; */
+        padding:20px 0;
+        display: flex;
+        justify-content: center
+      }
+  
+      .award-item-list .award-item:nth-child(even) {
+        background: rgb(255 255 255);
+      }
+  
+  
+    .award-item img {
+      /* position: relative; */
+      align-self: center;
+      /* top:-45%; */
+    }
+  
+    .contact-us-img {
+      border-width: 0 3px 0 0;
+      border-style: solid;
+      border-image: 
+        linear-gradient(
+          to bottom, 
+          #4577A5, 
+          rgba(0, 0, 0, 0)
+        ) 1 100%;
+        padding-right:50px;
+    }
+  
+    .contact-us-text {
+      font-weight:600;
+      font-size:1.5rem;
+    }
+  
+    .footer-section {
+      background:#012447;
+      color:#fff;
+    }
+  
+    
+  
+    .footer-section h4 span {
+      border-bottom: 1px solid #fff;
+      padding-bottom:10px;
+      margin-bottom:20px;
+      display:inline-block;
+    }
+  
+    .footer-section a {
+      color:#fff;
+      text-decoration: none;
+    }
+  
+    .footer-section ul {
+      list-style: none;
+      padding:0;
+    }
+  
+    .footer-section ul li {
+      padding: 5px 0
+    }
+  
+    .footer-section .btn {
+      color:#fff
+    }
+  
+  .btn-circle-white {
+    width:30px;
+    height:30px;
+    border-radius: 100%;
+    background:#fff;
+    line-height: 30px;
+    color:#012447;
+    text-align: center;
+    display: inline-block;
+    font-size:15px;
+    vertical-align:top;
+  }
+  
+  .border-bottom-footer-inner {
+    border-bottom: 1px solid #707070
+  }
+  
+  /* services page */
+  
+  ul.services-benefit-list {
+    list-style-position: outside;
+    border-left: 5px solid #4577A5;
+    padding: 15px 0;
+    margin: 0 0 0 20px;
+  }
+  
+  .services-benefit-list li {
+    list-style: none;
+    position: relative;
+    margin-left: -28px;
+    padding:15px 50px;
+  }
+  
+  .services-benefit-list li::before {
+    content: '';
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    background: url(../images/services-list-bullet-image.png) top no-repeat;
+    background-size:75%;
+    position: absolute;
+      left: 0;
+  }
+  
+  .why-svam {
+    color:#fff;
+  }
+  
+  .why-svam h4 {
+    font-weight:600;
+  }
+  
+  /* IT managed services */
+  
+  .service-offering-container h2 {
+    color:#000;
+    padding-bottom:20px;
+    border-bottom:1px solid #000;
+    margin: 0 15%;
+    position:relative;
+  }
+  
+  .service-offering-container h2::after{
+    content:"";
+    position:absolute;
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    left: calc(50% - 3px);
+    bottom:-4px;
+    background:#fff; 
+  }
+  
+  .service-offering-list-main{
+    justify-content: center;
+    color:#fff;
+  }
+  
+  .service-offering-list-main .item-outer {
+    padding:0 15px;
+    max-width:230px;
+    background:#348EE1;
+    margin:60px 5px 48px;
+    position:relative;
+    width:230px;
+  }
+  
+  .service-offering-list-main .item-outer::before {
+    border-left: 115px solid transparent;
+      border-right: 115px solid transparent;
+      border-bottom: 50px solid #0071BF;
+      content: "";
+      width: 100%;
+      display: inline-block;
+      position: absolute;
+      top: -49px;
+      left: 0;
+  }
+  
+  .service-offering-list-main .item-outer::after {
+    background: url(../images/service-offer-bottom-bg.png) no-repeat bottom;
+    padding-bottom:43px;
+    content: "";
+    display:block;
+    position:absolute;
+    bottom:-41px;
+    width:100%;
+    left:0
+  }
+  
+  .service-offering-container-small h2 {
+    color:#000;
+    padding-bottom:20px;
+    margin: 0 15%;
+    position:relative;
+  }
+  
+  .service-offering-container-small h6 {
+    background: #63abee;
+    padding: 15px;
+    color:#031424;
+    font-size:1.25em
+  }
+  
+  .service-offering-list-main-small{
+    justify-content: center;
+    color:#fff;
+  }
+  
+  .service-offering-list-main-small .item-outer {
+    background:#348EE1;
+    position:relative;
+  }
+  
+  .service-offering-list {
+    background:#348EE1;
+    margin:0
+  }
+  
+  .service-offering-list li {
+    background:#348EE1;
+    padding:5px 0
+  }
+  
+  .service-offering-list-main .item-outer h6 {
+    padding:10px 10px 0;
+    font-weight: 600;
+    color:#000;
+  }
+  
+  .service-offer-bottom-line{
+    justify-content: center;
+  }
+  
+  .service-offer-bottom-box:first-child::before,
+  .service-offer-bottom-box:last-child::before {
+    width:30px;
+    height:30px;
+    border-radius:100px;
+    position: absolute;
+    position: absolute;
+    content: "";
+    background: #404040;
+    top: 20px;
+  }
+  
+  .service-offer-bottom-box:last-child::before {
+    right:-16px;
+  }
+  
+  .service-offer-bottom-box:first-child::before {
+    left: -16px;
+  }
+  
+  .service-offer-line-bg {
+    background: #404040;
+    padding:15px 0;
+    width:230px;
+    height:30px;
+    margin-top:20px;
+  }
+  
+  .service-offer-button {
+    background: url(../images/arrow.svg) no-repeat top center;
+    display: inline-block;
+    color: #404040;
+    width:100%;
+    position:relative;
+  }
+  
+  .service-offer-button span.btn {
+    background:#0071BF;
+    border-radius:5px;
+    padding: 5px 10px;
+    width: 75%;
+    display: block;
+    text-align: center;
+    margin: 30px auto 5px;
+    position: relative;
+    color: #fff;
+  }
+  
+  .service-offer-button::before {
+    width:20px;
+    height:20px;
+    border-radius:100px;
+    background:#404040;
+    content:"";
+    display: inline-block;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: -12px;
+  }
+  
+  ul.circle-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  ul.circle-list li {
+    flex-direction: column;
+    width: 50%;
+    list-style: none;
+    position:relative;
+    padding: 0 40px 10px 10px;
+  }
+  
+  ul.circle-list li::before {
+    content: "";
+    background: url(../images/check-circle.svg) no-repeat;
+    position: absolute;
+    left: -36px;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    background-size: 85%;
+  }
+  
+  /* vciso page */
+  
+  .what-vciso h2 {
+    color:#fff;
+    padding-bottom:20px;
+    position:relative;
+  }
+  
+  .what-vciso .card-content {
+    color:#fff;
+  }
+  
+  .phased-list {
+    background: #4577A5;
+    width: auto;
+    display:inline-flex;
+    padding: 5px 5px;
+    border-radius: 25px;
+  }
+  
+  .phased-list li.nav-item a {
+    color:#fff;
+  }
+  
+  .phased-list li.nav-item a.nav-link{
+    padding: 0.5rem 3rem;
+    border-radius: 25px;
+  }
+  
+  .phased-list li.nav-item a.nav-link.active {
+    background:#fff;
+    color:#404040;
+  }
+  
+  .phased-list-content {
+    background: #00101a url(../images/vciso-phased-approach-bg.png) no-repeat top right;
+    border-radius:20px;
+    min-height:350px;
+  }
+  
+  .phased-list-content h6 {
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 40px 0;
+  }
+  
+  .phased-list-content ul.circle-list {
+    padding-top:20px;
+    flex-wrap: wrap;
+    color:#fff;
+  }
+  
+  .phased-list-content ul.circle-list li {
+    padding-bottom: 25px;
+    width:100%;
+  }
+  
+  .vciso-benefits-box {
+    background: url(../images/vciso-benefits-bg.png)  no-repeat;
+    background-size: cover;
+  }
+  
+  .vciso-benefits-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .vciso-benefits-list li {
+    border-radius: 16px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.16);
+    margin: 10px 10px;
+    width:20%;
+    padding:20px;
+  }
+  
+  .vciso-benefits-list h6 {
+    font-weight: 600;
+  }
+  
+  /* privacy policy */
+  
+  .privacy-policy-text div:nth-child(odd),
+  .privacy-policy-text div:nth-child(even) {
+    padding: 0 20px;
+  }
+  
+  .privacy-policy-text div:nth-child(even) {
+    background:#F5F3F3;
+  }
+  
+  .privacy-policy-text div:last-child {
+    margin-bottom: 40px;
+  }
+  
+  /* contact us */
+  
+  .contact-info-box {
+    background: #034C5D;
+  }
+  
+  .contact-info-box .accordion-item {
+    background-color: transparent;
+    border: solid #0FC9DF;
+    border-width: 0 0 1px 0;
+  }
+  
+  .accordion-button, 
+  .accordion-button:focus, 
+  .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: transparent;
+    box-shadow: none;  
+    padding: .75rem 1.25rem;
+  }
+  
+  .accordion-item:last-of-type {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: rotate(-180deg);
+    content: "-";
+    text-align: center;
+  }
+  
+  .accordion-button::after {
+    content: "+";
+    background-image: none;
+    transform: rotate(-90deg);
+    text-align: center;
+    border:1px solid #0FC9DF;
+  }
+  
+  .office-info {
+    color:#fff;
+    font-size: .85rem;
+  }
+  
+  .office-info p {
+    margin-bottom: .5rem;
+  }
+  
+  .office-info p:last-child {
+    margin-bottom: 0;
+  }
+  
+  h4.regional-sales-office{
+    color:#089BBC
+  }
+  
+  .company-name,
+  .phone-conatct,
+  .email-conatct {
+    padding-left:40px;
+  }
+  
+  .company-name::after, 
+  .phone-conatct::after,
+  .email-conatct::after {
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    height:30px;
+    width:30px;
+  }
+  
+  
+  .company-name::after {
+    background:url(../images/building-solid.svg) no-repeat;
+  }
+  
+  .phone-conatct::after {
+    background:url(../images/phone-solid.svg) no-repeat;
+  }
+  
+  .email-conatct::after {
+    background:url(../images/envelope-solid.svg) no-repeat;
+  }
+  
+  /* about us */
+  
+  .our-team-box {
+    background: #EFF7FF
+  }
+  
+  .our-team-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .our-team-list li {
+    margin: 10px 10px;
+    /* width:20%; */
+    padding:20px;
+  }
+  
+  .our-team-list .team-title  {
+    font-weight: 600;
+    font-size:1.1rem;
+  }
+  
+  /* learn more */
+  
+  .learn-more {
+    color: #4577A5;
+    /* text-decoration: none; */
+    /* display: inline-block/
+    padding-left:20px; */
+    text-decoration: underline;
+  }
+  
+  .bounce {
+    animation: bounce 2s infinite;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateX(0);
+    }
+    40% {
+      transform: translateX(10px);
+    }
+    60% {
+      transform: translateX(-2px);
+    }
+  }
+  
+  /* .responsive-tabs {
+    padding: 1rem;
+  } */
+  
+  .responsive-tabs .nav-tabs {
+    display: none;
+  }
+  

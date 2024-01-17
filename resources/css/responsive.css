@@ -1,0 +1,178 @@
+@media only screen and (min-width: 992px) {
+    
+    .responsive-tabs .nav-tabs {
+        display: flex;
+    }
+
+    .responsive-tabs .card {
+        border: none;
+    }
+
+    .responsive-tabs .card .card-header {
+        display: none;
+    }
+
+    .responsive-tabs .card .collapse {
+        display: block;
+    }
+
+  }
+
+  @media only screen and (max-width: 991px) {
+  .responsive-tabs .tab-pane {
+    display: block !important;
+    opacity: 1;
+}
+
+.vciso-benefits-list {
+    padding-left:0
+}
+
+.vciso-benefits-list li {
+    border-radius: 16px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.16);
+    margin: 10px 10px;
+    width:calc(50% - 20px);
+    padding:20px;
+  }
+
+  .our-team-list {
+    padding:0
+  }
+
+  .our-team-list li {
+    margin: 10px 10px;
+    width: calc(50% - 40px);
+    padding: 0;
+}
+  
+
+  }
+
+  @media only screen and (max-width: 767px) {
+
+    .banner {
+        width:100%;
+        background: url(../images/home-banner.png) no-repeat;
+        background-size: cover;
+        max-height:auto;
+        height:auto;
+      }
+
+      .banner-services-bg {
+        width:100%;
+        background: #000 url(../images/cyber_security_advisory_banner.png) no-repeat -30% ;
+        max-height: auto;
+        background-size: cover;
+        height:auto;
+      }
+
+      .banner-services-vciso-bg{
+        width:100%;
+        background: #000 url(../images/vciso_services_banner.png) no-repeat -30% ;
+        max-height: auto;
+        background-size: cover;
+        height:auto;
+      }
+      
+      .banner-it-managed-services-bg {
+        width:100%;
+        background: #000 url(../images/it_managed_services_banner.png) no-repeat -30% ;
+        max-height: auto;
+        background-size: cover;
+        height:auto;
+      }
+      
+      .banner-text {
+        color: #fff;
+        padding: 25px 0px;
+    }
+
+    .banner-text h1 {
+        font-size: 1.5rem;
+        padding-bottom: 15px;
+    }
+
+    .btn.btn-talk-to-expert {
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.5;
+        padding: 0.275rem 0.45rem;
+        font-size: .85rem;
+    }
+
+    /* tabs */
+    .custom-tab-pills .nav-link {
+        padding: 0.25rem 0.15rem;
+    }
+    .custom-tab-pills .nav-link {
+        border: 5px solid #4577A5;
+        font-size: .75rem;
+    }
+
+    .custom-tab-pills .nav-link.active {
+        font-size: .75rem;
+        border: 5px solid #4577A5;
+    }
+
+    .custom-tab-pills .nav-link .nav-item-arrow {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid #4577A5;
+        left: calc(50% - 5px);
+    }
+
+    .award-item img {
+        width:100%
+    }
+
+    .award-item img {
+        width:60%
+    }
+
+    .footer-section {
+        font-size:12PX;
+    }
+
+    .footer-section h4 span {
+        margin-bottom:5px;
+        font-size:12PX
+    }
+
+    ul.circle-list {
+        flex-wrap: nowrap;
+        flex-direction: column;
+      }
+      
+      ul.circle-list li {
+        flex-direction: row;
+        width: 100%;
+      }
+
+      .phased-list li.nav-item a.nav-link{
+        padding: 0.5rem 1rem;
+      }
+
+      .vciso-benefits-list {
+        padding-left:0
+    }
+    
+    .vciso-benefits-list li {
+        margin: 10px 0;
+        width:100%;
+      }
+
+      .our-team-list {
+        padding: 0;
+    }
+
+    .our-team-list li {
+        margin: 10px 0;
+        width: 100%;
+        padding: 0;
+    }
+    
+
+}
